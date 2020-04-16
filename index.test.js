@@ -16,9 +16,7 @@ test('The forEach function', () => {
     sum += value;
   });
 
-  if (sum !== 6) {
-    throw new Error('Expected summing array to equal 6');
-  }
+  assert.strictEqual(sum, 6, 'Expected forEach to sum the array');
 });
 
 test('The map function', () => {
